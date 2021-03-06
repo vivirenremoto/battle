@@ -145,9 +145,14 @@
 
 
 
-        function showEnemy() {
+        function showEnemy(time) {
+            var rand_delay;
 
-            var rand_delay = randomNumber(1000, 5000);
+            if (time == 1) {
+                rand_delay = time;
+            } else {
+                rand_delay = randomNumber(1000, 5000);
+            }
 
             setTimeout(function () {
 
@@ -242,7 +247,7 @@
 
 
         $(window).load(function () {
-            showEnemy();
+            showEnemy(1);
         });
 
     </script>
