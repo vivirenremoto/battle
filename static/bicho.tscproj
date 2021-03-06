@@ -1,0 +1,363 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "targetLoudness" : -18.0,
+  "shouldApplyLoudnessNormalization" : true,
+  "videoFormatFrameRate" : 30,
+  "audioFormatSampleRate" : 44100,
+  "width" : 888.0,
+  "height" : 963.0,
+  "version" : "3.0",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia",
+    "platform" : "Windows",
+    "version" : "19.0"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "C:\\Users\\mique\\Downloads\\sword\\enemy1.png",
+      "rect" : [0, 0, 888, 1064],
+      "lastMod" : "20210306T151442",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 888, 1064],
+          "sampleRate" : 0,
+          "bitDepth" : 8,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "src" : "C:\\Users\\mique\\Downloads\\sword\\enemy2.png",
+      "rect" : [0, 0, 888, 963],
+      "lastMod" : "20210306T151456",
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 888, 963],
+          "sampleRate" : 0,
+          "bitDepth" : 8,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ]
+    }
+  ],
+  "timeline" : {
+    "id" : 3,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "duration" : 2.53333333333333,
+          "title" : "",
+          "type" : "",
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 4,
+                    "_type" : "IMFile",
+                    "src" : 1,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "enemy1"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : 1.45661260830821e-12,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 29,
+                            "time" : 0,
+                            "value" : -5.93303184359684e-12,
+                            "duration" : 29
+                          },
+                          {
+                            "endTime" : 76,
+                            "time" : 64,
+                            "value" : -5.93303184359684e-12,
+                            "duration" : 12
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -782.258064516014,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 29,
+                            "time" : 0,
+                            "value" : -1.4015455462868e-11,
+                            "duration" : 29
+                          },
+                          {
+                            "endTime" : 43,
+                            "time" : 29,
+                            "value" : -171.483870967913,
+                            "duration" : 14
+                          },
+                          {
+                            "endTime" : 76,
+                            "time" : 64,
+                            "value" : -986.000000000218,
+                            "duration" : 12
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.905075187969925,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.905075187969925,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 76,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : 0.0
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 29,
+                          "duration" : 29,
+                          "range" : [ 0, 29]
+                        },
+                        {
+                          "endTime" : 43,
+                          "duration" : 14,
+                          "range" : [ 29, 14]
+                        },
+                        {
+                          "endTime" : 76,
+                          "duration" : 12,
+                          "range" : [ 64, 12]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 5,
+                    "_type" : "IMFile",
+                    "src" : 2,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "enemy2"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -42.1466165415357,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 17,
+                            "time" : 0,
+                            "value" : -42.1466165415431,
+                            "duration" : 17
+                          },
+                          {
+                            "endTime" : 43,
+                            "time" : 17,
+                            "value" : -42.1466165415057,
+                            "duration" : 26
+                          },
+                          {
+                            "endTime" : 76,
+                            "time" : 64,
+                            "value" : -42.1466165415057,
+                            "duration" : 12
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -1263.75806451593,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 17,
+                            "time" : 0,
+                            "value" : -481.499999999927,
+                            "duration" : 17
+                          },
+                          {
+                            "endTime" : 43,
+                            "time" : 17,
+                            "value" : 1.61290322585852,
+                            "duration" : 26
+                          },
+                          {
+                            "endTime" : 76,
+                            "time" : 64,
+                            "value" : -812.903225806446,
+                            "duration" : 12
+                          }
+                        ]
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 76,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "WinSubProjectDisplayName" : "",
+                      "clipSpeedAttribute" : false,
+                      "default-translation0" : 0.0,
+                      "default-translation1" : -0.5
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 17,
+                          "duration" : 17,
+                          "range" : [ 0, 17]
+                        },
+                        {
+                          "endTime" : 43,
+                          "duration" : 26,
+                          "range" : [ 17, 26]
+                        },
+                        {
+                          "endTime" : 76,
+                          "duration" : 12,
+                          "range" : [ 64, 12]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 32,
+      "backgroundColor" : [ 0, 0, 0, 191],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "backgroundColor" : [ 53, 0, 78, 255]
+  },
+  "metadata" : {
+    "AutoSaveFile" : "C:\\Users\\mique\\AppData\\Local\\TechSmith\\Camtasia Studio\\19.0\\Auto-Saves\\bicho11a69d.autosave.tscproj",
+    "CanvasZoom" : 62,
+    "Date" : "2021-03-06 05:03:19 ",
+    "IsAutoSave" : "0",
+    "Language" : "ENU",
+    "ProfileName" : "",
+    "ProjectDimensionsChanged" : "1",
+    "Title" : "bicho",
+    "audioNarrationNotes" : "",
+    "calloutStyle" : "Basic",
+    "canvasDetached" : "False",
+    "canvasPositionHeight" : "0",
+    "canvasPositionLeft" : "0",
+    "canvasPositionTop" : "0",
+    "canvasPositionWidth" : "0"
+  }
+}
