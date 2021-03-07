@@ -18,7 +18,7 @@
     <link rel="prefetch" href="static/music.mp3" />
     <link rel="prefetch" href="static/hit2.mp3" />
     <link rel="prefetch" href="static/attack.mp3" />
-    <link rel="prefetch" href="static/enemy6.gif" />
+    <link rel="prefetch" href="static/enemy7.gif" />
     <link rel="prefetch" href="static/player2.png" />
 
 
@@ -70,7 +70,7 @@
 
         BODY {
             touch-action: pan-x pan-y;
-            background: #000 url('static/background_static.gif');
+            background: #6618e6 url('static/background_static');
             background-size: 100% auto;
             width: 100%;
             height: 100%;
@@ -82,6 +82,7 @@
         .background {
             background: url('static/background3.gif');
             background-size: 100% auto;
+            opacity: 0.9;
             position: fixed;
             width: 100%;
             height: 100%;
@@ -114,7 +115,7 @@
 
             body,
             .background {
-                background-size: 250% auto;
+                background-size: 280% auto;
             }
 
 
@@ -212,7 +213,7 @@
                 }, 500);
 
 
-                $('#enemy').attr('src', 'static/enemy6.gif');
+                $('#enemy').attr('src', 'static/enemy7.gif');
 
 
             }, rand_delay);
