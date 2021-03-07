@@ -123,7 +123,7 @@
             margin-left: -315px;
         }
 
-        #player {
+        .shake {
             animation: shake 0.5s;
             animation-iteration-count: infinite;
         }
@@ -185,7 +185,7 @@
 
             .background {
                 background-image: url('static/background_mobile3.gif');
-                background-size:cover;
+                background-size: cover;
             }
 
 
@@ -211,7 +211,7 @@
         <div class="background"></div>
 
 
-        <img src="static/1c.gif" id="player">
+        <img src="static/1c.gif" id="player" class="shake">
 
 
         <img src="static/blank.png" id="enemy" style="width:480px;height:367px;position:fixed;left:0;width:100%;top:0;">
@@ -348,7 +348,7 @@
             sound_attack.play();
 
 
-            $('#player').attr('src', 'static/1c.gif').delay(1).attr('src', 'static/animation2.gif');
+            $('#player').removeClass('shake').attr('src', 'static/1c.gif').delay(1).attr('src', 'static/animation2.gif');
 
 
 
@@ -373,7 +373,7 @@
 
                 setTimeout(function () {
 
-                    $('#player').attr('src', 'static/1c.gif');
+                    $('#player').attr('src', 'static/1c.gif').addClass('shake');
                 }, 250);
 
 
