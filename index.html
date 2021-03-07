@@ -17,7 +17,8 @@
 
     <link rel="prefetch" href="static/music.mp3" />
     <link rel="prefetch" href="static/hit2.mp3" />
-    <link rel="prefetch" href="static/enemy4.gif" />
+    <link rel="prefetch" href="static/attack.mp3" />
+    <link rel="prefetch" href="static/enemy6.gif" />
     <link rel="prefetch" href="static/player2.png" />
 
 
@@ -49,7 +50,7 @@
 
         BODY {
             touch-action: pan-x pan-y;
-            background: #000 url('static/background3.gif');
+            background: #6618e6 url('static/background_static');
             background-size: 100% auto;
             width: 100%;
             height: 100%;
@@ -58,12 +59,15 @@
             padding: 0;
         }
 
-        .player1 {
-            background: url('static/player.png');
-        }
-
-        .player2 {
-            background: url('static/player2.png');
+        .background {
+            background: url('static/background3.gif');
+            background-size: 100% auto;
+            opacity: 0.9;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
         }
 
         .credits {
@@ -71,6 +75,16 @@
             font-size: 30px;
             color: white !important;
             z-index: 99;
+        }
+
+        #player {
+            z-index: 99;
+            width: 450px;
+            height: 505px;
+            position: fixed;
+            left: 50%;
+            top: 40px;
+            margin-left: -315px;
         }
 
 
@@ -82,6 +96,13 @@
             body {
                 background-size: 250% auto;
             }
+
+
+            #player {
+                width: 360px;
+                height: 404px;
+                margin-left: -250px;
+            }
         }
     </style>
 
@@ -92,10 +113,10 @@
         style="position:fixed;right:10px;">vivirenremoto</a>
 
 
-    <div style="position:fixed;width:100%;height:100%;left:0;top:0;"></div>
+    <div class="background"></div>
 
-    <div id="player" class="player1"
-        style="z-index:99;background-size:100% auto;width:200px;height:367px;position:fixed;left:50%;top:50px;margin-left:-100px;">
+
+    <img src="static/1.gif" id="player">
     </div>
 
 
@@ -110,6 +131,10 @@
 
     <audio id="sound_hit">
         <source src="static/hit2.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="sound_attack">
+        <source src="static/attack.mp3" type="audio/mp3">
     </audio>
 
 
@@ -131,9 +156,12 @@
 
 
         var sound_hit = document.getElementById('sound_hit');
+        var sound_attack = document.getElementById('sound_attack');
 
 
-        var enemy_width = (817 * screen_height) / 802;
+        //var enemy_width = (817 * screen_height) / 802;
+
+        var enemy_width = (722 * screen_height) / 719;
 
         var player_height = $('#player').height();
 
@@ -152,7 +180,7 @@
             if (time == 1) {
                 rand_delay = time;
             } else {
-                rand_delay = randomNumber(500, 2000);
+                rand_delay = randomNumber(2000, 4000);
             }
 
             setTimeout(function () {
@@ -162,7 +190,8 @@
                 }, 500);
 
 
-                $('#enemy').attr('src', 'static/enemy4.gif');
+                $('#enemy').attr('src', 'static/enemy5.gif');
+
 
             }, rand_delay);
         }
@@ -187,13 +216,24 @@
             if (!music_playing) {
                 music_playing = true;
                 music.play();
+
+
+                setTimeout(function () {
+                    showEnemy(1);
+                }, 1500);
             }
         });
 
         $('body').mousedown(function () {
 
 
-            $('#player').removeClass('player1').addClass('player2');
+            sound_attack.currentTime = 0;
+            sound_attack.play();
+
+
+            $('#player').attr('src', 'static/1.gif').delay(1).attr('src', 'static/animation2.gif');
+
+
 
             $('#player').stop().css('top', '50').animate({
                 'top': screen_height - player_height
@@ -203,13 +243,21 @@
                     'top': '50'
                 }, 500);
 
-                $('#player').removeClass('player2').addClass('player1');
+
+
+
+
+                setTimeout(function () {
+
+                    $('#player').attr('src', 'static/1.gif');
+                }, 250);
 
 
                 if (enemy_visible) {
 
                     sound_hit.currentTime = 0;
                     sound_hit.play();
+
 
 
                     $('#enemy').delay(300).stop().css('top', '417').animate({
@@ -247,9 +295,7 @@
 
 
 
-        window.onload = function () {
-            showEnemy(1);
-        };
+
 
     </script>
 
