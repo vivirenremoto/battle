@@ -235,6 +235,14 @@
 
 
 
+            if (enemy_visible) {
+
+                setTimeout(function () {
+                    sound_hit.currentTime = 0;
+                    sound_hit.play();
+                }, 250);
+            }
+
             $('#player').stop().css('top', '50').animate({
                 'top': screen_height - player_height
             }, 250, function () {
@@ -242,7 +250,6 @@
                 $('#player').stop().animate({
                     'top': '50'
                 }, 500);
-
 
 
 
@@ -255,8 +262,6 @@
 
                 if (enemy_visible) {
 
-                    sound_hit.currentTime = 0;
-                    sound_hit.play();
 
 
 
