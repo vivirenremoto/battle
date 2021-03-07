@@ -288,7 +288,7 @@
                 }, 250);
             }
 
-            $('#player').stop().css('top', '50').animate({
+            $('#player').stop().css('top', '40').animate({
                 'top': (screen_height - (player_height / 1))
             }, 250, function () {
 
@@ -306,11 +306,12 @@
 
 
                 if (enemy_visible) {
+                    enemy_visible = false;
 
 
 
 
-                    $('#enemy').delay(300).stop().css('top', 0).animate({
+                    $('#enemy').delay(300).stop().animate({
                         'top': '+1000'
                     }, 500, function () {
 
@@ -319,7 +320,6 @@
                         $('#enemy').attr('src', 'static/blank.png').stop().animate({
                             'top': '0'
                         }, 250, function () {
-                            enemy_visible = false;
 
                             showEnemy(false);
 
