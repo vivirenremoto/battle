@@ -19,6 +19,7 @@
     <link rel="prefetch" href="static/hit2.mp3" />
     <link rel="prefetch" href="static/attack.mp3" />
     <link rel="prefetch" href="static/enemy7.gif" />
+    <link rel="prefetch" href="static/enemy5.gif" />
     <link rel="prefetch" href="static/player2.png" />
 
 
@@ -213,8 +214,12 @@
                 }, 500);
 
 
-                $('#enemy').attr('src', 'static/enemy7.gif');
+                if (screen_width < 480) {
+                    $('#enemy').attr('src', 'static/enemy7.gif');
+                } else {
+                    $('#enemy').attr('src', 'static/enemy5.gif');
 
+                }
 
             }, rand_delay);
         }
