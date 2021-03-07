@@ -20,7 +20,8 @@
     <link rel="prefetch" href="static/attack.mp3" />
     <link rel="prefetch" href="static/enemy7.gif" />
     <link rel="prefetch" href="static/enemy5.gif" />
-    <link rel="prefetch" href="static/background3.gif" />
+    <link rel="prefetch" href="static/background_full6.gif" />
+    <link rel="prefetch" href="static/background_mobile3.gif" />
     <link rel="prefetch" href="static/1c.gif" />
     <link rel="prefetch" href="static/animation2.png" />
 
@@ -97,7 +98,7 @@
         }
 
         .background {
-            background: url('static/background3.gif');
+            background: url('static/background_full6.gif');
             background-size: 100% auto;
             opacity: 0.9;
             position: fixed;
@@ -130,12 +131,17 @@
                 font-size: 24px;
             }
 
-            body,
+
             .background {
-                background-size: cover;
+                background: url('static/background_mobile3.gif');
             }
 
 
+
+            body,
+            .background {
+                background-size: 100% auto;
+            }
 
 
             #player {
