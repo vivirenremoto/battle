@@ -164,12 +164,21 @@
 
         <img src="static/blank.png" id="enemy" style="width:480px;height:367px;position:fixed;left:0;width:100%;top:0;">
 
+        <div id="help"
+            style="color:white;z-index:200;position:fixed;left:0;right:0;bottom:0;font-size:30px;text-align:center;">HAZ
+            CLICK PARA
+            INTERACTUAR
+        </div>
+
 
     </div>
 
 
 
     </div>
+
+
+
 
     <audio id="music" loop>
         <source src="static/music_sonic.mp3" type="audio/mp3">
@@ -274,6 +283,8 @@
                     setTimeout(function () {
                         showEnemy(1);
                     }, 1500);
+
+                    $('#help').hide();
                 }
             }
         });
