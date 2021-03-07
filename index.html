@@ -343,7 +343,18 @@
 
 
 
+        /*
         window.addEventListener('blur', (evt) => {
+            setTimeout(function () {
+                music_playing = false;
+                music.pause();
+
+            }, 500);
+        });
+        */
+
+
+        $('a').click(function () {
             setTimeout(function () {
                 music_playing = false;
                 music.pause();
@@ -352,18 +363,11 @@
         });
 
 
-        /*
+
         window.addEventListener('load', (evt) => {
             setTimeout(function () {
                 $('#game').fadeIn('slow');
-            }, 1000);
-        });
-        */
-
-        $('a').click(function () {
-            setTimeout(function () {
-                $('#game').fadeIn('slow');
-            }, 1000);
+            }, 500);
         });
 
 
