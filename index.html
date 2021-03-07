@@ -87,8 +87,6 @@
         }
 
         #game {
-            background: hsl(263, 81%, 50%);
-            background-size: 100% auto;
             width: 100%;
             height: 100%;
             position: fixed;
@@ -377,7 +375,7 @@
 
         window.addEventListener('load', (evt) => {
             setTimeout(function () {
-                $('#game').fadeIn('slow');
+                $('#game').fadeIn('slow').css('background', '#5012B4');
             }, 500);
         });
 
