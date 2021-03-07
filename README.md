@@ -2,8 +2,8 @@
  
 [Web](https://vivirenremoto.github.io/battle/)
 
-[Autora Dibujo](https://www.artstation.com/artwork/4wKD2)
+[Autora Dibujo - Beatriz Rebollo](https://www.artstation.com/artwork/4wKD2)
 
-[Autor Programación](https://twitter.com/vivirenremoto)
+[Autor Programación - Miquel Camps](https://twitter.com/vivirenremoto)
 
 ![Juego Dinorun](https://vivirenremoto.github.io/battle/static/social.png)
