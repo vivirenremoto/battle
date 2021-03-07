@@ -190,6 +190,7 @@
         var screen_width = $(document).width();
 
 
+        var actived = false;
         var music_playing = false;
         var enemy_visible = false;
 
@@ -222,7 +223,7 @@
             if (time == 1) {
                 rand_delay = time;
             } else {
-                rand_delay = randomNumber(2000, 4000);
+                rand_delay = randomNumber(2000, 3000);
             }
 
             setTimeout(function () {
@@ -263,10 +264,13 @@
                 music_playing = true;
                 music.play();
 
+                if (!actived) {
+                    actived = true;
 
-                setTimeout(function () {
-                    showEnemy(1);
-                }, 1500);
+                    setTimeout(function () {
+                        showEnemy(1);
+                    }, 1500);
+                }
             }
         });
 
