@@ -260,7 +260,7 @@
         var enemy_visible = false;
 
         var music = document.getElementById('music');
-        music.volume = 0.5;
+        music.volume = 0.8;
 
 
         var sound_hit = document.getElementById('sound_hit');
@@ -273,6 +273,9 @@
 
         var player_height = $('#player').height();
 
+
+
+        var is_attack = false;
 
         $('#enemy').css('height', screen_height).css('width', enemy_width).css('margin-left', ((screen_width - enemy_width) / 2));
 
@@ -343,6 +346,10 @@
 
         $('body').mousedown(function () {
 
+            if (is_attack) return;
+
+            is_attack = true;
+
 
             sound_attack.currentTime = 0;
             sound_attack.play();
@@ -366,7 +373,9 @@
 
                 $('#player').stop().animate({
                     'top': '50'
-                }, 500);
+                }, 500, function () {
+                    is_attack = false;
+                });
 
 
 
