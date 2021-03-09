@@ -17,6 +17,7 @@
     <link rel="prefetch" href="static/music_sonic.mp3" />
     <link rel="prefetch" href="static/hit2.mp3" />
     <link rel="prefetch" href="static/attack.mp3" />
+    <link rel="prefetch" href="static/monster.mp3" />
     <link rel="prefetch" href="static/enemy7.gif" />
     <link rel="prefetch" href="static/enemy5.gif" />
     <link rel="prefetch" href="static/background_full6.gif" />
@@ -244,6 +245,11 @@
     </audio>
 
 
+    <audio id="sound_monster">
+        <source src="static/monster.mp3" type="audio/mp3">
+    </audio>
+
+
     <script>
 
 
@@ -264,6 +270,7 @@
 
         var sound_hit = document.getElementById('sound_hit');
         var sound_attack = document.getElementById('sound_attack');
+        var sound_monster = document.getElementById('sound_monster');
 
 
         //var enemy_width = (817 * screen_height) / 802;
@@ -299,6 +306,9 @@
                     enemy_visible = true;
                 }, 500);
 
+                setTimeout(function () {
+                    sound_monster.play();
+                }, 250);
 
                 if (screen_width < 480) {
                     $('#enemy').attr('src', 'static/enemy7.gif');
